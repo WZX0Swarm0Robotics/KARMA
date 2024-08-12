@@ -21,34 +21,25 @@ Create a conda environment (or virtualenv):
 conda env create -f environment.yml
 ```
 
+Activate the virtual environment
+```
+conda activate karma
+```
+
 ## Creating OpenAI API Key
 The code relies on OpenAI API. Create an API Key at https://platform.openai.com/.
 
-Create a file named ```api_key.txt``` in the root folder of the project and paste your OpenAI Key in the file. 
+In file /karma/scripts/llm_as_planner.py, change 'your_key' in line 4 of the code to your own OpenAI api key.
+
+In file /karma/scripts/execute_LLM_plan.py, add the following code: api_key = 'your_key'
 
 ## Running Script
 Run the following command to generate output execuate python scripts to perform the tasks in the given AI2Thor floor plans. 
 
 Refer to https://ai2thor.allenai.org/demo for the layout of various AI2Thor floor plans.
+
 ```
-python3 scripts/run_llm.py --floor-plan {floor_plan_no}
+python3 scripts/GUI_karma.py 
 ```
-Note: Refer to the script for running it on different versions of GPT models and changing the test dataset. 
+Note: You can enter the tasks you want the agent to perform in the GUI, for example："wash an apple and put it on the countertop", "slice an apple and place it on the plate". 
 
-The above script should generate the executable code and store it in the ```logs``` folder.
-
-
-Run the following script to execute the above generated scripts and execute it in an AI2THOR environment. 
-
-The script requires command which needs to be executed as parameter. ```command``` needs to be the folder name in the ```logs``` folder where the executable plans generated are stored. 
-```
-python3 scripts/execute_plan.py --command {command}
-```
-## Dataset
-The repository contains numerous commands and robots with various skill sets to perform heterogenous robot tasks. 
-
-Refer to ```data\final_test\``` for the various tasks, robots available for the tasks, and the final state of the environment after the task for evaluation. 
-
-The file name corresponds to the AI2THOR floor plans where the task will be executed. 
-
-Refer to ```resources\robots.py``` for the list of robots used in the final test and the skills possessed by each robot. 
