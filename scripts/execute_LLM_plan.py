@@ -32,7 +32,7 @@ import requests
 # sys.path.append('/home/user/wzx/karma/logs')
 task_queue = queue.Queue()
 
-api_key = 'your_key'
+
 directory_path = '/home/user/wzx/karma/memory/short_term'
 task_description_file_path = '/home/user/wzx/karma/logs/task_description.json'
 results_file_path = '/home/user/wzx/karma/memory/analysis_results.json'
