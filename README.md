@@ -5,14 +5,15 @@ Anonymous EMNLP submission.
 Submitted to The 2024 Conference on Empirical Methods in Natural Language Processing(EMNLP).
 
 ## Setup
+
+To get started, clone the KARMA repository:
+```
+git clone https://github.com/WZX0Swarm0Robotics/KARMA
+```
+
 Create a conda environment (or virtualenv):
 ```
 conda env create -f environment.yml
-```
-
-Install dependencies:
-```
-pip install -r requirments.txt
 ```
 
 ## Creating OpenAI API Key
