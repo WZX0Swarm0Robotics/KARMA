@@ -46,15 +46,3 @@ Refer to ```data\final_test\``` for the various tasks, robots available for the 
 The file name corresponds to the AI2THOR floor plans where the task will be executed. 
 
 Refer to ```resources\robots.py``` for the list of robots used in the final test and the skills possessed by each robot. 
-
-
-## Citation
-If you find this work useful for your research, please consider citing:
-```
-@article{kannan2023smart,
-    title={SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models},
-  	author={Kannan, Shyam Sundar and Venkatesh, Vishnunandan LN and Min, Byung-Cheol},
-  	journal={arXiv preprint arXiv:2309.10062},
- 	year={2023}
-}
-```
