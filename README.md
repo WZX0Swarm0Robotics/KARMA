@@ -11,6 +11,11 @@ To get started, clone the KARMA repository:
 git clone https://github.com/WZX0Swarm0Robotics/KARMA
 ```
 
+Switch to the karma directory
+```
+cd KARMA
+```
+
 Create a conda environment (or virtualenv):
 ```
 conda env create -f environment.yml
