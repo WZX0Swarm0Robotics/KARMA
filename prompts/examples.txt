@@ -1,0 +1,97 @@
+Example 1 Decomposition:
+# GENERAL TASK DECOMPOSITION
+# Independent subtasks:
+# SubTask 1: wash fork in sink. (Skills Required: GoToObject, SwitchOff)
+# We should perform subtask1 first.
+# CODE
+def wash_fork_in_sink(robot):
+    # 0: SubTask 1: wash fork in sink
+    # 1: go to the fork (because you know the position of fork, and fork is in the countertop).
+    goto(robot, 'Fork')
+    # 2: Pick up the fork.
+    PickupObject(robot, 'Fork')
+    # 4: Explore the Sink.
+    goto(robot, 'Sink')
+    # 5: wash the fork in the Sink.
+    Clean(robot, 'Fork')
+
+Example 2 Decomposition:
+# GENERAL TASK DECOMPOSITION
+# Sequence subtasks:
+# SubTask 1: Throw the Fork in the trash. (Skills Required: Explore, PickupObject, ThrowObject)
+# Since the previous tasks involved throwing utensils into the trash, let's assume that the spatula might also be in the trash if it was thrown away. If the spatula's position changed due to previous tasks, we should consider the new location.
+# SubTask 2: Wash the Fork in the sink. (Skills Required: GoToObject, PickupObject)
+# We can execute SubTask 1 first and then SubTask 2.
+
+# CODE
+def throw_fork_in_trash_and_wash_fork_in_sink(robot):
+    # 0: SubTask 1: Throw the Fork in the trash
+    # 1: Explore the Fork.
+    available_positions = [
+        (1.25, 0, -1.75),
+        (-1.0, 0, 0),
+        (-0.25, 0, -1.5),
+        (-1.0, 0, -1.5),
+        (0.5, 0, 1.5),
+        (1.5, 0, -0.25),
+        (1.5, 0, 1.0),
+        (-2.0, 0, 2.0)
+    ]
+    Explore(robot,'Fork',available_positions)
+    # 2: Pick up the Fork.
+    PickupObject(robot,'Fork')
+    # 3: Explore the GarbageCan.
+    goto(robot,'GarbageCan')
+    # 4: Throw the Fork in the GarbageCan.
+    ThrowObject(robot,'Fork', 'GarbageCan')
+    # 5: SubTask 2: Wash the Fork in the sink
+    # 6: Go to the GarbageCan.
+    goto(robot,'Fork')
+    # 7: Pick up the Fork.
+    PickupObject(robot,'Fork')
+    # 8: Explore the Sink.
+    goto(robot,'Sink')
+    # 9: Wash the Fork in the Sink.
+    Clean(robot,'Fork')
+
+Example 3 Decomposition:
+# EXAMPLE 1 - Task Description: Turn off the light and turn on the faucet.
+# GENERAL TASK DECOMPOSITION
+# Independent subtasks:
+# SubTask 1: Turn off the light. (Skills Required: ExploreObject, SwitchOff)
+# SubTask 2: Turn on the faucet. (Skills Required: ExploreObject, SwitchOff)
+# We should perform subtask1 first and then subtask2.
+
+# CODE
+def turn_off_light_and_turn_on_faucet(robot):
+    # 0: SubTask 1: Turn off the light
+    # 1: Explore the LightSwitch.
+    available_positions = [
+        (1.25, 0, -1.75),
+        (-1.0, 0, 0),
+        (-0.25, 0, -1.5),
+        (-1.0, 0, -1.5),
+        (0.5, 0, 1.5),
+        (1.5, 0, -0.25),
+        (1.5, 0, 1.0),
+        (-2.0, 0, 2.0)
+    ]
+    Explore(robot,'LightSwitch', available_positions)
+    # 2: Switch off the LightSwitch.
+    SwitchOff(robot,'LightSwitch')
+    # 3: SubTask 2: Turn on the faucet
+    # 4: Explore the Faucet.
+    available_positions = [
+        (1.25, 0, -1.75),
+        (-1.0, 0, 0),
+        (-0.25, 0, -1.5),
+        (-1.0, 0, -1.5),
+        (0.5, 0, 1.5),
+        (1.5, 0, -0.25),
+        (1.5, 0, 1.0),
+        (-2.0, 0, 2.0)
+    ]
+    Explore(robot,'Faucet', available_positions)
+    # 5: Switch on the Faucet.
+    SwitchOn(robot,'Faucet')
+

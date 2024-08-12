@@ -1,0 +1,10 @@
+center (-1.0, 0.00, -1.5) has {Cabinet, Cabinet, Cabinet, Cabinet, CounterTop, Faucet, HousePlant, Sink, SinkBasin, StoveBurner, StoveBurner, StoveKnob, Window}
+center (-1, 0.00, 0.0) has {Cabinet, Cabinet, CoffeeMachine, Drawer, Drawer, Drawer, Drawer, Toaster,CounterTop, Floor, Stool, Stool}
+center (-2, 0.00, 2.0) has {Fridge, GarbageCan}
+center (-0.25, 0.00, -1.5) has {Cabinet, Cabinet, Cabinet, CounterTop, Microwave, StoveBurner, StoveBurner, StoveKnob, StoveKnob, StoveKnob}
+center (0.5, 0.00, 1.5) has {}
+center (1.25, 0.00, -1.75) has {Drawer, Drawer, Drawer, Drawer, Drawer, Shelf, Shelf, Shelf, ShelvingUnit}
+center (1.5, 0.00, -0.25) has {LightSwitch}
+center (1.5, 0.00, 1.0) has {}. 
+
+If you are using the `Explore` function, you should consider which of the aforementioned points the object is likely to be located at when passing parameters, and sort all eight points in the order of the likelihood of finding the object.

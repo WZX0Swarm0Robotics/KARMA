@@ -1,0 +1,1 @@
+Please help me decompose the following tasks: wash an apple. Please output only the generated code.

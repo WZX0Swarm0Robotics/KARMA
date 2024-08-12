@@ -1,0 +1,1 @@
+When decomposing a task, consider previously performed tasks and how they changed the object's state and position. If object's position changed, you can use GoToObject() to the new position of objects,instead of using explore() to find objects.
