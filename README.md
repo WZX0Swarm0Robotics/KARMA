@@ -41,9 +41,11 @@ Note: You can enter the tasks you want the agent to perform in the GUI, for exam
 ## Citation
 If you find our paper and code useful in your research, please consider giving a star ⭐ and citation 📝:
 
+```
 @article{wang2024karma,
   title={Karma: Augmenting embodied ai agents with long-and-short term memory systems},
   author={Wang, Zixuan and Yu, Bo and Zhao, Junzhe and Sun, Wenhao and Hou, Sai and Liang, Shuai and Hu, Xing and Han, Yinhe and Gan, Yiming},
   journal={arXiv preprint arXiv:2409.14908},
   year={2024}
 }
+```
