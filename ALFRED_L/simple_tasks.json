@@ -1,0 +1,94 @@
+{
+    "SimpleTasks": [
+      {
+        "FloorPlan":1,
+        "ID": 1,
+        "Goal Condition": "ON(apple, table): 1, INSIDE(tomato, sink): 1, TOGGLEON(faucet): 1, STATE(tomato, clean): 1",
+        "Instruction": "Place the apple on the table, wash a tomato." 
+      },
+      {
+        "FloorPlan":416,
+        "ID": 2,
+        "Goal Condition": "INSIDE(toilet paper, trash): 1",
+        "Instruction": "Throw away an empty toilet paper roll."
+      },
+      {
+        "FloorPlan":224,
+        "ID": 3,
+        "Goal Condition": "SWITCHON(lamp): 1, ON(lamp,cellphone): 1",
+        "Instruction": "To use the lamp to see the cell phone. "
+      },
+      {
+        "FloorPlan":1,
+        "ID": 4,
+        "Goal Condition": "STATE(potato, sliced): 1, STATE(apple, sliced): 1",
+        "Instruction": "Slice a potato, Slice a apple."
+      }, 
+      {
+        "FloorPlan":207,
+        "ID": 5,
+        "Goal Condition": "ON(book, shelf): 1, ON(card, desk): 1",
+        "Instruction": "Place a book on the shelf, Place a card on the desk."
+      },
+      {
+        "FloorPlan":23,
+        "ID": 6,
+        "Goal Condition": "STATE(bowl, filled): 1",
+        "Instruction": "Fill a bowl with water."
+      },
+      {
+        "FloorPlan":11,
+        "ID": 7,
+        "Goal Condition": "ON(bowl, table): 1",
+        "Instruction": "Put the bowl with turner from the stove to the table"
+      },
+      {
+        "FloorPlan":415,
+        "ID": 8,
+        "Goal Condition": "INSIDE(cloth, cabinet): 1",
+        "Instruction": "place a clean wash cloth on top of the tall white cabinet"
+      },
+      {
+        "FloorPlan":1,
+        "ID": 9,
+        "Goal Condition": "STATE(apple, sliced): 1, STATE(egg, cooked): 1",
+        "Instruction": "Slice an apple, Cook an egg."
+      },
+      {
+        "FloorPlan":20,
+        "ID": 10,
+        "Goal Condition": "ON(mug, kitchen counter): 1",
+        "Instruction": "Place a mug with the spoon in it on the kitchen counter"
+      },
+      {
+        "FloorPlan":417,
+        "ID": 11,
+        "Goal Condition": "INSIDE(plunger, cabinet): 1",
+        "Instruction": "Put the plunger in the left cabinet."
+      },
+      {
+        "FloorPlan":8,
+        "ID": 12,
+        "Goal Condition": "INSIDE(spoon, cabinet): 1",
+        "Instruction": "Put a clean spoon in a cabinet."
+      },
+      {
+        "FloorPlan":314,
+        "ID": 13,
+        "Goal Condition": "ON(cd, dresser): 1",
+        "Instruction": "take a cd from a table to a dresser"
+      },
+      {
+        "FloorPlan":218,
+        "ID": 14,
+        "Goal Condition": "ON(plate, table): 1",
+        "Instruction": "Put two plates on a coffee table."
+      },
+      {
+        "FloorPlan":19,
+        "ID": 15,
+        "Goal Condition": "STATE(potato, cooked): 1, INSIDE(potato, refrigerator)",
+        "Instruction": "Cook potato and put in refrigerator."
+      }
+    ]
+}

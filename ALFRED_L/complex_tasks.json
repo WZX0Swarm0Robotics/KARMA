@@ -1,0 +1,113 @@
+{
+    "ComplexTasks": [
+      {
+        "FloorPlan":1,
+        "ID": 1,
+        "Goal Condition": "INSIDE(apple, sink): 1, STATE(apple, clean): 1, STATE(apple, sliced): 1, INSIDE(apple, plate): 1, INSIDE(plate, fridge): 1", 
+        "Instruction": "please find the apple and wash it, and then slice the red fruit, place the clean red fruit on the plate, put the plate in the fridge."
+      },
+      {
+        "FloorPlan":2,
+        "ID": 2,
+        "Goal Condition": "ON(scoop, drawer): 1, ON(bottle, table): 1, INSIDE(ladles, fridge): 1, INSIDE(scoop, sink): 1",
+        "Instruction": "Pick up a scoop from the island, and then put it on the kitchen drawer. To gather two ladles and store them in the cabinet to the right of fridge. Pickup the the cutlery used for drinking soup and put it in the sink"
+      },
+      {
+        "FloorPlan":1,
+        "ID": 3,
+        "Goal Condition": "INSIDE(bread, fridge): 1, ON(bowl, desk): 1, INSIDE(bread, trash): 1, ON(bowl, counter): 1, INSIDE(apple, bowl): 1, INSIDE(bottle, fridge): 1",
+        "Instruction": "Put the bread in the fridge, take the bowl out and put it on the desk, put the food in a trash, place the bowl on the counter, put the apple in the bowl, put the container back in the fridge."
+      },
+      {
+        "FloorPlan":301,
+        "ID": 4,
+        "Goal Condition": "ON(watch, desk): 1, ON(pen, desk): 1, ON(desk): 1, ON(pen, bed): 1",
+        "Instruction": "Place two watches on the desk, place a pen near the watches, and then place a Laptop on the desk, and then find something to take notes on and put it in the bed"
+      },
+      {
+        "FloorPlan":22,
+        "ID": 5,
+        "Goal Condition": "ON(cup, counter): 1, ON(knife, counter): 1, ON(apple, plate): 1, ON(plate, counter): 1, INSIDE(cup, sink): 1, INSIDE(knife, sink): 1",
+        "Instruction": "Put a brown cup and a butter knife in it on the counter, put an apple on the plate, and then put it on the counter, put tablewares in the sink."
+      },
+      {
+        "FloorPlan":6,
+        "ID": 6,
+        "Goal Condition": "STATE(tomato, sliced): 1, STATE(tomato, cooked): 1, ON(tomato, plate): 1, ON(knife, desk): 1, INSIDE(plate, sink): 1",
+        "Instruction": "Slice the tomato, heat the tomato using microwave, put tomato in the plate, place knife on the desk, place the used tableware in the sink."
+      },
+      {
+        "FloorPlan":16,
+        "ID": 7,
+        "Goal Condition": "INSIDE(pan, cabinet): 1, INSIDE(spoon, pan): 1, STATE(apple, clean): 1, STATE(apple, sliced): 1, ON(apple, plate): 1",
+        "Instruction": "Put a pan in a cabinet,  put a spoon in the pan, wash an apple and slice it, and then put it on the plate with a spoon."
+      },
+      {
+        "FloorPlan":227,
+        "ID": 8,
+        "Goal Condition": "INSIDE(keys, box): 1, ON(box, sofa): 1, STATE(laptop, desk): 1, ON(keys, desk): 1, INSIDE(laptop,cabinet)",
+        "Instruction": "Place keys in a box, and then put the box on the sofa, place a laptop on the desk, and then place keys on the desk, store the laptop inside the cabinet."
+      },
+      { 
+        "FloorPlan":27,
+        "ID": 9,
+        "Goal Condition": "STATE(tomatoes, sliced): 1, INSIDE(tomatoes, microwave): 1, INSIDE(knife, sink): 1",
+        "Instruction": "Slice two tomatoes, put a knife, a middle slice, an end slice in the microwave, and then wash the dirty tableware."
+      },
+      {
+        "FloorPlan":19,
+        "ID": 10,
+        "Goal Condition": "INSIDE(bread, microwave), ON(bread, table): 1, INSIDE(knife, sink): 1, INSIDE(bread, trash): 1",
+        "Instruction": "Place a microwaved slice of bread on the wooden table, wash the knife, and then throw the heated food in the trash."
+      },
+      {
+        "FloorPlan":422,
+        "ID": 11,
+        "Goal Condition": "ON(soapbar, cloth), INSIDE(plunger, cabinet), ON(soapbar,(-1.7, 0.8, 0.3))",
+        "Instruction": "put soapbar near the cloth, move a plunger to the cabinet, and then put the toiletries back where they belong"
+      },
+      {
+        "FloorPlan":227,
+        "ID": 12,
+        "Goal Condition": "INSIDE(keys, box): 1, ON(box, sofa): 1, ON(vase, key): 1",
+        "Instruction": "Put the keys in the box, and then put it on the on the couch, put the vase in near the key."
+      },
+      {
+        "FloorPlan":203,
+        "ID": 13,
+        "Goal Condition": "ON(lamp, desk): 1, ON(phone, desk): 1, ON(lamp,(-1.8,2.0,0.4)): 1",
+        "Instruction": "Turn on a lamp with a cell phone, and then put the toiletries back where they belong"
+      },
+      { 
+        "FloorPlan":28,
+        "ID": 14,
+        "Goal Condition": "INSIDE(lettuce, sink): 1, TOGGLEON(faucet): 1, STATE(lettuce, clean): 1, ON(lettuce, plate): 1, INSIDE(plate, fridge): 1",
+        "Instruction": "Put the lettuce in the sink, turn on the faucet, wash the leafy vegetable, place the leafy vegetable on a plate, put the plate in the fridge."
+      },
+      {
+        "FloorPlan":23,
+        "ID": 15,
+        "Goal Condition": "INSIDE(lettuce, fridge): 1, INSIDE(egg, pot): 1, INSIDE(lettuce, sink): 1",
+        "Instruction": "Put the lettuce in the fridge, place an egg in the pot, and then put a cold head of food in the sink."
+      },
+      {
+        "FloorPlan":27,
+        "ID": 16,
+        "Goal Condition": "INSIDE(lettuce, fridge): 1, STATE(lettuce, sliced): 1, ON(SoapBottle, desk): 1, INSIDE(lettuce, microwave): 1",
+        "Instruction": "Put an lettuce in the fridge, slice the cold lettuce, put an SoapBottle on the desk, put a cold vegetable slice in the microwave."
+      },
+      {
+        "FloorPlan":207,
+        "ID": 17,
+        "Goal Condition": "ON(pens, desk): 1, ON(cellphone, desk): 1, On(RemoteControl, desk): 1",
+        "Instruction": "Retrieve two pens from the table, put the pens in the desk drawer, place the cellphone near the pens, put the RemoteControl near the pens"
+      },
+      {
+        "FloorPlan":211,
+        "ID": 18,
+        "Goal Condition": "ON(newspapers, table): 1, ON(RemoteControl, table): 1, ON(Pillow, sofa): 1, ON(newspapers, sofa): 1",
+        "Instruction": "Move to newspapers to the coffee table, put an RemoteControl on the coffee table, put a Pillow on the sofa, and then Bring something to read to the sofa."
+      }
+    ]
+}
+  
