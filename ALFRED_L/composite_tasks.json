@@ -1,0 +1,95 @@
+{
+    "CompositeTasks": [
+      {
+        "FloorPlan":1,
+        "ID": 1,
+        "Goal Condition": "STATE(apple, sliced): 1, INSIDE(apple, trash): 1, ON(bread, plate): 1, INSIDE(plate, fridge): 1",
+        "Instruction": "slice the apple, throw the Tomato in the trash, place the bread slices on a plate, put the plate in the fridge."
+      },
+      {
+        "FloorPlan":1,
+        "ID": 2,
+        "Goal Condition": "ON(bread, plate): 1, STATE(bread, sliced): 1, INSIDE(bread, toaster): 1, ON(toast, plate): 1",
+        "Instruction": "place the bread on the plate, toast the bread, put the toasted bread back on the plate."
+      },
+      {
+        "FloorPlan":1,
+        "ID": 3,
+        "Goal Condition": "STATE(Tomato, sliced): 1, STATE(Egg, cooked): 1, INSIDE(Tomato, bowl): 1, ON(Egg, plate): 1",
+        "Instruction": "Slice the Tomato, cook the Egg, put the Tomato in a bowl, place the cooked Egg on a plate."
+      },
+      {
+        "FloorPlan":5,
+        "ID": 4,
+        "Goal Condition": "STATE(egg, cooked): 1, INSIDE(egg, fridge): 1, STATE(egg, sliced): 1, INSIDE(egg, dish): 1, ON(egg, table): 1",
+        "Instruction": "Boil an egg, put the egg in the fridge, peel the egg, put the peeled egg in a dish, place the dish on the table."
+      },
+      {
+        "FloorPlan":201,
+        "ID": 5,
+        "Goal Condition": "ON(book, desk): 1, TOGGLEON(DeskLamp): 1, TOGGLEOFF(DeskLamp): 1, ON(book, shelf): 1, INSIDE(book, GarbageCan): 1",
+        "Instruction": "Place the book on the desk, turn on the DeskLamp, turn off the DeskLamp, place the book on the shelf, put the book in a GarbageCan."
+      },
+      {
+        "FloorPlan":5,
+        "ID": 6,
+        "Goal Condition": "STATE(Potato, sliced): 1, INSIDE(Potato, fridge): 1, STATE(Potato, melted): 1, INSIDE(Potato, oven): 1, ON(Potato, plate): 1",
+        "Instruction": "slice the Potato, put the Potato in the fridge, heat the Potato, put the melted Potato in the oven, place the Potato on a plate."
+      },
+      {
+        "FloorPlan":28,
+        "ID": 7,
+        "Goal Condition": "STATE(Lettuce, sliced): 1, INSIDE(Lettuce, plate): 1, STATE(Lettuce, cooked): 1, ON(Lettuce, plate): 1, INSIDE(plate, sink): 1",
+        "Instruction": "Chop an Lettuce, put the chopped Lettuce in a pan, cook the Lettuce, place the cooked Lettuce on a plate, put the plate in the sink."
+      },
+      { 
+        "FloorPlan":28,
+        "ID": 8,
+        "Goal Condition": "ON(mug, table): 1, STATE(mug, filled): 1, STATE(mug, empty): 1, INSIDE(mug, sink): 1, ON(mug, shelf): 1",
+        "Instruction": "Place a mug on the table, fill the mug with water, empty the mug, put the mug in the sink, place the mug on the shelf."
+      },
+      {
+        "FloorPlan":28,
+        "ID": 9,
+        "Goal Condition": "STATE(Lettuce, washed): 1, STATE(Lettuce, sliced): 1, INSIDE(Lettuce, plate): 1, ON(plate, countertop): 1, INSIDE(plate, fridge): 1",
+        "Instruction": "Wash a Lettuce, slice the Lettuce, put the Lettuce's slices on the plate, place the plate on a countertop, put the plate in the fridge."
+      },
+      { 
+        "FloorPlan":28,
+        "ID": 10,
+        "Goal Condition": "TOGGLEON(StoveBurner): 1, ON(pot, StoveBurner): 1, STATE(pot, filled): 1, TOGGLEOFF(StoveBurner): 1, ON(pot, countertop): 1",
+        "Instruction": "Turn on the StoveBurner, place a pot on the StoveBurner, fill the pot with water, turn off the StoveBurner, place the pot on the countertop."
+      },
+      { 
+        "FloorPlan":28,
+        "ID": 11,
+        "Goal Condition": "ON(plate, DiningTable): 1, ON(apple, plate): 1, INSIDE(plate, sink): 1, STATE(plate, washed): 1, ON(plate, countertop): 1, INSIDE(plate, Shelf): 1",
+        "Instruction": "Place a plate on the table, serve the apple on the plate, put the plate in the sink, wash the plate, place the plate on the countertop, put the plate in the Shelf."
+      },
+      { 
+        "FloorPlan":207,
+        "ID": 12,
+        "Goal Condition": "ON(CreditCard, sofa): 1, TOGGLEON(LightSwitch): 1, TOGGLEOFF(LightSwitch): 1, INSIDE(CreditCard, bag): 1, ON(vase, desk): 1",
+        "Instruction": "Place the CreditCard on the sofa, turn on the LightSwitch, turn off the LightSwitch, put the CreditCard in a bag, place the vase on the desk."
+      },
+      { 
+        "FloorPlan":1,
+        "ID": 13,
+        "Goal Condition": "STATE(apple, cooked): 1, INSIDE(apple, bowl): 1, INSIDE(bowl, sink): 1, ON(bowl, shelf): 1",
+        "Instruction": "Mash the apple, put the mashed apple in a bowl, put the bowl in the sink, place the bowl on the shelf."
+      },
+      {
+        "FloorPlan":1,
+        "ID": 14,
+        "Goal Condition": "STATE(potato, cooked): 1, INSIDE(potato, plate): 1, STATE(potato, sliced): 1, INSIDE(potato, pot): 1, ON(plate, fridge): 1",
+        "Instruction": "Boil the potato, put the boiled potato in a dish, mash the potato, put the mashed potato in a pot, place the plate with potato in a fridge."
+      },
+      {
+        "FloorPlan":207,
+        "ID": 15,
+        "Goal Condition": "STATE(book, sofa): 1, ON(card, desk): 1, INSIDE(mug, desk): 1, ON(book, desk): 1",
+        "Instruction": "put the book on the sofa, place the card on a desk, put the mug in the desk, place the book on the desk"
+      }
+    ]
+  }
+  
